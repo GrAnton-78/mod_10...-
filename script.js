@@ -70,13 +70,6 @@ function addBtnFunc() {
     .then(json => console.log(json))
 }
 
-// const ok = document.querySelector("#ok")
-// ok.addEventListener('click', oki)
-// function oki() {
-//   alert("Умница, теперь приступай! У тебя все получится")
-// }
-
-
 const navBtn = document.querySelector('.nav-button');
 const mobileNav = document.querySelector('.mobile-nav');
 const body = document.body;
