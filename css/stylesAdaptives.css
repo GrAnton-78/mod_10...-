@@ -134,18 +134,19 @@ p {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     gap: 10px;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     padding: 20px;
     border: none;
 }
+
 #productList img {
     width: 200px;
     height: 300px;
@@ -186,6 +187,7 @@ p {
 .header {
     padding-top: 5%;
     margin-bottom: 10%;
+    /* display: flex; */
 }
 
 .nav {
@@ -416,7 +418,7 @@ p {
 .gis {
     position: relative;
     padding-left: 30px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     text-decoration: none;
     color: black
@@ -705,7 +707,8 @@ p {
 .footer {
     padding-bottom: 120px;
     background-color: #070707;
-    height: 300px;
+    height: 400px;
+    width: 100%;
 }
 
 .footer-copyright {
@@ -715,7 +718,11 @@ p {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+    /* flex-wrap: nowrap; */
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .footer-copyright-logo {
@@ -723,23 +730,24 @@ p {
     color: #fff;
 }
 
-.footer-copyright-desc {
+/* .footer-copyright-desc {
     max-width: 303px;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.78;
-}
+} */
 
 .footer-copyright-end {
     display: flex;
     flex-wrap: wrap;
-    align-self: flex-end;
-    margin-left: 50%;
+    /* align-self: flex-end; */
+    margin-left: 15px;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.78;
     color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
 }
 
 .footer-nav {
@@ -749,6 +757,7 @@ p {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.78;
+    margin: 5%;
 }
 
 .footer-nav-title {
@@ -819,12 +828,43 @@ a.buttonca {
     box-shadow: rgba(0, 0, 0, .3) 0 2px 5px;
 }
 
-a.buttonca:active {
+a.buttonca, pagination button:active {
     top: 1px;
     box-shadow: none;
 }
 
-a.buttonca:hover {
+a.buttonca, pagination button:hover {
     transition: .5s linear;
     background-position: -200% 0, 0 0;
+}
+
+/* Пагинация */
+
+.pagination {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px
+}
+
+.pagination button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 1px;
+    border: none;
+    position: relative;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: -1px -1px #000;
+    user-select: none;
+    padding: .8em 2em;
+    outline: none;
+    background-color: #000;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .0) 30%, rgba(255, 255, 255, .8), rgba(255, 255, 255, .0) 70%), radial-gradient(190% 100% at 50% 0%, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .5) 50%, rgba(0, 0, 0, 0) 50%);
+    background-repeat: no-repeat;
+    background-size: 200% 100%, auto;
+    background-position: 200% 0, 0 0;
+    box-shadow: rgba(0, 0, 0, .3) 0 2px 5px;
 }
