@@ -9,22 +9,20 @@
 body {
     margin: 0;
     font-family: "Jost", sans-serif;
-    /* background-color: #e7e7d9; */
     background-size: 100% auto;
     background-repeat: no-repeat;
     color: #131212;
 }
 
 .elementSale {
-    /* height: 100px; */
+  
     max-width: 100px;
 }
 
 img {
     display: block;
     margin-left: 3%;
-    /* max-width: 100%; */
-}
+    }
 
 .no-scroll {
     overflow-y: hidden;
@@ -837,8 +835,6 @@ a.buttonca, pagination button:hover {
     transition: .5s linear;
     background-position: -200% 0, 0 0;
 }
-
-/* Пагинация */
 
 .pagination {
     text-align: center;
